@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add/Edit Employee</title>
+   <style>
+    body{
+    background-color:whitesmoke;
+    }
+    .container{
+            text-align: center;
+            margin-top:10rem;
+            
+        }
+        form{
+             width:30%;
+             margin-left:35%;
+             padding-top:2rem;
+             padding-bottom:2rem;
+             border-radius:5%;
+             background-color: rgb(88, 235, 112);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Edit Employee</h2>
+    <form action="employee" method="post">
+        <label>EID:</label><input type="text" name="eid" required/><br/><br/>
+        <label>Name:</label><input type="text" name="name" required/><br/><br/>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+</body>
+</html>

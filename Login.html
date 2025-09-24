@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<style>
+body{
+background-color:whitesmoke;
+}
+    .container{
+    text-align:center;
+    
+    }
+    form{
+    background-color:rgb(88, 235, 112);
+    width:30%;
+    margin-left:35%;
+    margin-top:10%;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    border-radius:10%;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<form action="login" id="loginForm" method="post">
+ <label>Email:</label><input type="text" name="email" placeholder="Enter your email"/>
+ <br/><br/>
+ <label>Password:</label><input type="text" name="password" placeholder="Enter password"/>
+ <br/><br/>
+ <button type="submit">Login</button>
+ </form>
+ </div>
+ <script>
+// Prevent default form submission and redirect to attendance.html
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault(); 
+    window.location.href = "user.html"; // Redirect to attendance page
+});
+</script>
+</body>
+</html>
